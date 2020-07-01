@@ -1,0 +1,104 @@
+
+
+/*===========================
+       10.SUBSCRIBE  css 
+===========================*/
+
+
+.subscribe-area{
+    padding: 40px 50px 90px;
+    @include box-shadow ( 0px 0px 18px 0px rgba(50,77,215,0.14));
+    border-radius: 10px;
+    background-color: $white;
+    
+    @media #{$xs}{
+        padding: 10px 30px 60px;
+    }
+}
+
+.subscribe-content{
+    & .subscribe-title{
+        font-size: 35px;
+        font-weight: 700;
+        
+        @media #{$lg}{
+            font-size: 30px;
+        }
+        @media #{$xs}{
+            font-size: 24px;
+        }
+        
+        & span{
+            font-weight: 400;
+        }
+    }
+}
+
+.subscribe-form{
+    position: relative;
+    
+    & input{
+        border: 2px solid $border-color;
+        height: 65px;
+        padding: 0 30px;
+        border-radius: 5px;
+        width: 100%;
+        color: $black;
+        
+        @include placeholder{
+            opacity: 1;
+            color: #B9B9B9;
+        }
+        
+        &:focus{
+            border-color: $theme-color;
+        }
+        
+    }
+    & button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 65px;
+        line-height: 65px;
+        background: -webkit-linear-gradient(left, rgba(254,132,100,1) 0%, rgba(254,110,154,1) 50%, rgba(254,132,100,1) 100%);
+        background: -o-linear-gradient(left, rgba(254,132,100,1) 0%, rgba(254,110,154,1) 50%, rgba(254,132,100,1) 100%);
+        background: linear-gradient(to right, rgba(254,132,100,1) 0%, rgba(254,110,154,1) 50%, rgba(254,132,100,1) 100%);
+        background-size: 200%;
+        
+        @media #{$xs}{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        @media #{$sm}{
+            position: absolute;
+            width: auto;
+            margin-top: 0;
+            border-radius: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    
+        &:hover{
+            color: $white;
+            background-position: right center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

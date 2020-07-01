@@ -1,0 +1,52 @@
+
+
+
+/*===========================
+      03.BRAND css 
+===========================*/
+
+.brand-logo{
+    
+    @media #{$xs}{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+.single-logo{
+    padding: 0 30px;
+    
+    @media #{$md}{
+        padding: 0 15px;
+    }
+    @media #{$xs}{
+        padding: 0 15px;
+    }
+    @media #{$xs}{
+        width: 50%;
+    }
+    @media #{$sm}{
+        width: 33.33%;
+    }
+    
+    & img{
+        width: 100%;
+        opacity: 0.5;
+        @include transition(0.3s);
+    }
+    
+    &:hover{
+        & img{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

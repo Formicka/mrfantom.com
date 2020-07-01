@@ -1,0 +1,113 @@
+
+
+/*===========================
+      04.SERVICES css 
+===========================*/
+
+
+
+.single-services{
+    background-color: $white;
+    @include box-shadow (0px 5px 30px 0px rgba(167,167,167,0.16));
+    @include transition(0.3s);
+    padding: 50px 30px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    
+    @media #{$xs}{
+        padding: 20px 20px 30px;
+    }
+    
+    & .services-icon{
+        display: inline-block;
+        position: relative;
+        
+        & img{
+            @include transition(0.4s);
+        }
+        & .shape{}
+        & .shape-1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+        }
+        
+        & i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            font-size: 34px;
+            color: $white;
+        }
+    }
+    & .services-content{
+        & .services-title{
+            & a{
+                font-size: 26px;
+                font-weight: 700;
+                color: $black;
+                @include transition(0.3s);
+                
+                @media #{$lg}{
+                    font-size: 24px;
+                }
+                
+                @media #{$xs}{
+                    font-size: 20px;
+                }
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        & .text{
+            margin-top: 30px;
+            
+            @media #{$xs}{
+                margin-top: 20px;
+            }
+        }
+        & .more{
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+            @include transition(0.3s);
+            
+            & i{
+                margin-left: 10px;
+            }
+            
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+    
+    &:hover{
+        border-color: #FE7A7B;
+        
+        & .services-icon{
+            & .shape{
+                @include transform(rotate(25deg));
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

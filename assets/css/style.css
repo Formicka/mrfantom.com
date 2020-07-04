@@ -2189,3 +2189,14 @@ a.navbar-brand {
   position: relative;
   margin: 0 auto;
 }
+
+
+.dropdown-menu {
+  border: 0 none;
+  min-width: 120px;
+}
+.dropdown-item {
+  padding-left: 10px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}

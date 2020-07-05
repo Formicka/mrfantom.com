@@ -103,3 +103,8 @@
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
  
 </IfModule>
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
